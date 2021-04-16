@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\gradletest\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2831797587.index
+\spring-boot-bookshop\src\main\java

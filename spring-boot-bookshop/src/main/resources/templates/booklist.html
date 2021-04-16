@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Book List</title>
+</head>
+<body>
+<div class="container">
+    <h2>bookList</h2>
+    <form class="header" th:action="@{/add}" method="post" th:object="${book}">
+        <input type="text" id="input" placeholder="ISBN" th:field="*{ISBN}">
+        <input type="text" id="input" placeholder="title" th:field="*{title}">
+        <input type="text" id="input" placeholder="author" th:field="*{author}">
+        <input type="text" id="input" placeholder="year" th:field="*{year}">
+        <input type="text" id="input" placeholder="publisher" th:field="*{publisher}">
+        <input type="text" id="input" placeholder="cost" th:field="*{cost}">
+        <button type="submit" class="addBtn">Add</button>
+    </form>
+    <span th:text="${title}"></span>
+    <ul th:each="book:${bookList}">
+        <li><span th:text="${book.title}"></span> </li><li><span th:text="${book.author}"></span> <span class="close">x</span></li>
+    </ul> 
+</div>
+</body>
+</html>

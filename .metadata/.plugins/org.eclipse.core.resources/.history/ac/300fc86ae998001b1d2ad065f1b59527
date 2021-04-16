@@ -1,0 +1,25 @@
+server.port=8043
+
+## è³æä¾æºéç½® (DataSourceAutoConfiguration & DataSourceProperties)
+spring.datasource.url=jdbc:postgresql://localhost:5432/test
+spring.datasource.username=postgres
+spring.datasource.password=1111
+
+# Hibernate åèª
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+
+# DDL ç´å¥ (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto = update
+
+spring.jpa.show-sql=true
+
+
+### Freemarker configuration ###
+spring.freemarker.template-loader-path= classpath:/templates
+spring.freemarker.suffix= .ftl
+
+spring.thymeleaf.cache=false
+spring.thymeleaf.prefix: classpath\:/templates/    \# ???templates????html??
+spring.thymeleaf.suffix: .html
+spring.thymeleaf.encoding: UTF-8
+spring.thymeleaf.mode: HTML5

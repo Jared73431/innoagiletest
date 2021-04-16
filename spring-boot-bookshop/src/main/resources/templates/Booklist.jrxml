@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9545b299-a7d5-4b3f-8d9b-298d8dd4bd36">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="Ym9vayBBUyAsNTksMTcsYmUwOWU3NWUtNjEzMi00NDQ2LWJhZjEtMmZiOGE5NjlhNjQzOw=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<parameter name="ISBN" class="java.lang.String"/>
+	<parameter name="author" class="java.lang.String"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="publisher" class="java.lang.String"/>
+	<parameter name="year" class="java.lang.String"/>
+	<parameter name="cost" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT book.isbn,
+	book.author,
+	book.cost,
+	book.publisher,
+	book.title,
+	book."year"
+FROM book]]>
+	</queryString>
+	<field name="isbn" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="isbn"/>
+		<property name="com.jaspersoft.studio.field.label" value="isbn"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<field name="author" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="author"/>
+		<property name="com.jaspersoft.studio.field.label" value="author"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<field name="cost" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="cost"/>
+		<property name="com.jaspersoft.studio.field.label" value="cost"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<field name="publisher" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="publisher"/>
+		<property name="com.jaspersoft.studio.field.label" value="publisher"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<field name="title" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="title"/>
+		<property name="com.jaspersoft.studio.field.label" value="title"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<field name="year" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="year"/>
+		<property name="com.jaspersoft.studio.field.label" value="year"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="book"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="100" height="30" uuid="b923b83d-3a74-40eb-8aca-c98af4788a50">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9b3602f2-e897-4b1d-bd27-e25719c54631"/>
+				</reportElement>
+				<text><![CDATA[isbn]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="10" width="100" height="30" uuid="0d180a15-eb9d-4df6-8c8e-824be18137a2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f1191d07-0aa1-4d03-9dc8-cfcc8e458e07"/>
+				</reportElement>
+				<text><![CDATA[author]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="10" width="100" height="30" uuid="f7f8360e-5938-44eb-9f8e-bdad4b6781b2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55588187-02ac-4a9b-9c38-371c5c2e4a86"/>
+				</reportElement>
+				<text><![CDATA[title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="11" width="100" height="30" uuid="544024ec-5b06-4198-ae83-4904d57a21a3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="972ce08e-4546-41cd-a69c-aebcbf912c16"/>
+				</reportElement>
+				<text><![CDATA[publisher]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="10" width="70" height="30" uuid="81a0443b-c70f-4853-b6ee-8929e9140b80">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="332d6909-d628-459c-893b-a3e4fe1a5832"/>
+				</reportElement>
+				<text><![CDATA[cost]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="10" width="100" height="30" uuid="2ccb1b00-9307-4359-b770-da907c05ba1a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9c23be79-1fec-4836-9f37-85fa70238631"/>
+				</reportElement>
+				<text><![CDATA[year]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="78" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="29e92b03-d607-413c-81db-f2b1281c782c"/>
+				<textFieldExpression><![CDATA[$P{ISBN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="30" uuid="324271a3-bcda-48ef-acda-9fef460d2142"/>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{author}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="30" uuid="ddba5e12-36c6-4492-9766-235cf4616c9a"/>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="30" uuid="976c1b80-bab3-4277-9063-4a04380ad32f"/>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{publisher}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="70" height="30" uuid="cb5512e7-cdb4-4391-8256-44ad5f7bab28"/>
+				<textFieldExpression><![CDATA[$P{cost}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="0" width="100" height="30" uuid="822aa231-d023-4fd3-8a67-5be46fc7d917"/>
+				<textFieldExpression><![CDATA[$P{year}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="student" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f64a08c8-3c28-47a3-9e56-ebd9e1b9c6c7">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="c3R1ZGVudCAsMTksMjMsYzMxMDZhY2QtMTY0MS00YWI2LWE4MzMtYjc1ODZiZTJjMDZkOw=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<parameter name="registrationNumber" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT student.age,
+	student.name,
+	student.registration_number,
+	student.id
+FROM student]]>
+	</queryString>
+	<field name="age" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="age"/>
+		<property name="com.jaspersoft.studio.field.label" value="age"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="registration_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="registration_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="registration_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="99" y="0" width="100" height="30" uuid="a342bffb-00d2-4c9a-9f29-21c0bdffce15">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5626732c-4700-4658-9a74-d5746c49005d"/>
+				</reportElement>
+				<text><![CDATA[age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="0" width="100" height="30" uuid="bec7c0a9-73eb-42b9-b981-69a1d55563aa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="62087208-779c-49e1-9565-b9553015c682"/>
+				</reportElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="0" width="100" height="30" uuid="99ee8fc5-0f1f-45f7-a518-c441105242d7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49ae5605-152a-4da0-95e0-88682346d902"/>
+				</reportElement>
+				<text><![CDATA[registration_number]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="69" splitType="Stretch">
+			<textField>
+				<reportElement x="90" y="30" width="100" height="30" uuid="31e8b40f-01d4-4b0e-a79f-6f3f7f8a7f18"/>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="30" width="100" height="30" uuid="132edbbc-597f-44cf-b751-ad1a063115b7"/>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="30" width="100" height="30" uuid="ff042cb1-2534-472a-a344-5c358a348028"/>
+				<textElement>
+					<font fontName="標楷體"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{registrationNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
