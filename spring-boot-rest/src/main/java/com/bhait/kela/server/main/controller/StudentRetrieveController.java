@@ -31,7 +31,7 @@ public class StudentRetrieveController {
 
 	@ResponseBody
 	@PostMapping("/savestudent")
-	public String savestudent(@RequestParam(value = "age", required = true) int age,
+	public String savestudents(@RequestParam(value = "age", required = true) int age,
 			@RequestParam(value = "name", required = true) String name,
 			@RequestParam(value = "registrationNumber", required = true) String registrationNumber) {
 
