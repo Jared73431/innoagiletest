@@ -20,8 +20,8 @@ public class callcontroller {
 	
 	@ResponseBody
 	@RequestMapping(method = RequestMethod.GET, value = "/getall")
-    public List getAllStudents() {
-		List studentlist =  cartFeignClient.getAll();
+    public List<?> getAllStudents() {
+		List<?> studentlist =  cartFeignClient.getAll();
 		return studentlist;
 		
 	}

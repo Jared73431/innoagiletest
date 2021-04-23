@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface CartFeignClient {
 
 	@GetMapping("/student/allstudent")
-	public List getAll();
+	public List<?> getAll();
 
 	@RequestMapping(method = RequestMethod.POST, value = "/savestudent")
 	public String savestudent(@RequestParam("age") int age,@RequestParam("name")String name,@RequestParam("registrationNumber") String registrationNumber);
