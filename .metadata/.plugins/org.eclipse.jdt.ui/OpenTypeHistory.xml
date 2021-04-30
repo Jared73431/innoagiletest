@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=spring-boot-rest/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.bhait.kela.server.main.controller{StudentRetrieveController.java[StudentRetrieveController" modifiers="1" timestamp="1618562604178"/>
-    <typeInfo handle="=spring-boot-plsql/C:\/Users\/Jared\/.gradle\/caches\/modules-2\/files-2.1\/org.springframework.data\/spring-data-jpa\/2.4.8\/3b828cf72c68f3affc75809229fc729ab530c6af\/spring-data-jpa-2.4.8.jar=/gradle_used_by_scope=/main,test=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1618901533997"/>
-    <typeInfo handle="=spring-boot-plsql/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.example.beans{Table2.java[Table2" modifiers="1" timestamp="1618902174830"/>
+    <typeInfo handle="=spring-boot-Member-login/C:\/Users\/Jared\/.gradle\/caches\/modules-2\/files-2.1\/org.springframework.data\/spring-data-jpa\/2.4.8\/3b828cf72c68f3affc75809229fc729ab530c6af\/spring-data-jpa-2.4.8.jar=/gradle_used_by_scope=/main,test=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1618901533997"/>
+    <typeInfo handle="=spring-boot-Member-login/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.demo.example.service{Userservice.java[Userservice" modifiers="513" timestamp="1619773030484"/>
 </typeInfoHistroy>

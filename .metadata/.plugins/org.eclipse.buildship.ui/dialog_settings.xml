@@ -7,4 +7,7 @@
 		<list key="working_sets">
 		</list>
 	</section>
+	<section name="org.eclipse.buildship.ui.wizard.project.import">
+		<item key="project_location" value="C:\gradletest\spring-boot-virtualbox"/>
+	</section>
 </section>
