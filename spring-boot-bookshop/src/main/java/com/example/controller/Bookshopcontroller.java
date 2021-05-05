@@ -2,6 +2,8 @@ package com.example.controller;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -22,6 +24,8 @@ import com.example.service.Bookservice;
 
 @Controller
 public class Bookshopcontroller {
+	
+	Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
 	@Autowired
 	Bookservice bookservice;
@@ -106,4 +110,10 @@ public class Bookshopcontroller {
 		bookservice.deletebook(ISBN);
 		return "redirect:/todos";
 	    }
+	@GetMapping(value = "/sample/testlog")
+	@ResponseBody
+	Object testlog() {
+		logger.info("统计异常池数量异常,异常信息如下:e.getStackTrace().toString()");
+		return "ok";
+	}
 }

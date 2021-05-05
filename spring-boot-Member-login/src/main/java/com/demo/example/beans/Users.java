@@ -1,6 +1,5 @@
 package com.demo.example.beans;
 
-
 import java.sql.Date;
 import java.sql.Timestamp;
 
@@ -24,8 +23,8 @@ import lombok.ToString;
 @Entity
 @ToString
 @Table(name = "Users")
-public class User {
-	
+public class Users {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Uid;
@@ -33,31 +32,29 @@ public class User {
 	private String name;
 
 	private String password;
+
 	
-	@Email
 	private String email;
-	
+
 	@Pattern(regexp = "^1(3|4|5|7|8)\\d{9}$", message = "手机号码格式错误")
 	@NotBlank(message = "手机号码不能为空")
 	private String phone;
 
 	private String articles;
 
-	private Byte avatar;
-
 	private String identityid;
-	
+
 	@CreationTimestamp
 	private Date creatTime;
 
 	private String missNumber;
-	
+
 	@UpdateTimestamp
 	private Date missTime;
-	
+
 	@LastModifiedDate
 	private Date allowTime;
-	
+
 	private String authority;
 
 }

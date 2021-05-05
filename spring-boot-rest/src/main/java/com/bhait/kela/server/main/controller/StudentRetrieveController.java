@@ -2,6 +2,8 @@ package com.bhait.kela.server.main.controller;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +19,8 @@ import com.bhaiti.kela.server.main.beans.Student;
 
 @Controller
 public class StudentRetrieveController {
+
+	Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
 	@Autowired
 	StudentService studentService;
@@ -65,5 +69,25 @@ public class StudentRetrieveController {
 	public Student getbykey(@PathVariable(value = "id") int id) {
 		Student student = studentService.getbykey(id);
 		return student;
+	}
+
+	@GetMapping(value = "/sample/testlog")
+	@ResponseBody
+	Object testlog() {
+		logger.info("统计异常池数量异常,异常信息如下:e.getStackTrace().toString()");
+		return "ok";
+	}
+
+	@GetMapping(value = "/string")
+	@ResponseBody
+	public String helloString() {
+		System.out.println("=> Hello Log4jDemo...");
+        logger.trace("trace level");
+        logger.debug("debug level");
+        logger.info("info level");
+        logger.warn("warn level");
+        logger.error("error level");
+        logger.fatal("fatal level");
+		return "Hello Spring Boot";
 	}
 }

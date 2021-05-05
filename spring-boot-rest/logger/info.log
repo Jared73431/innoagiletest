@@ -1,0 +1,149 @@
+2021-05-04 15:19:15.837 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarting(55): Starting SpringBootRestApplication using Java 11.0.10 on LAPTOP-JARED with PID 21508 (C:\gradletest\spring-boot-rest\bin\main started by Jared in C:\gradletest\spring-boot-rest)
+2021-05-04 15:19:15.865 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
+2021-05-04 15:19:18.522 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:19:18.524 INFO  [main] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
+2021-05-04 15:19:18.525 INFO  [main] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-04 15:19:18.904 INFO  [main] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
+2021-05-04 15:19:19.226 INFO  [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-04 15:19:19.363 INFO  [main] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-04 15:19:19.642 INFO  [main] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-04 15:19:19.853 INFO  [main] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
+2021-05-04 15:19:20.160 INFO  [main] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
+2021-05-04 15:19:20.190 INFO  [main] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-04 15:19:21.766 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 15:19:23.343 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:19:23.406 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarted(61): Started SpringBootRestApplication in 9.094 seconds (JVM running for 11.391)
+2021-05-04 15:19:45.406 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].log(173): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-04 15:19:45.598 INFO  [http-nio-8081-exec-1] .helloString(87): info level
+2021-05-04 15:19:45.600 WARN  [http-nio-8081-exec-1] .helloString(88): warn level
+2021-05-04 15:19:45.603 ERROR [http-nio-8081-exec-1] .helloString(89): error level
+2021-05-04 15:19:45.604 FATAL [http-nio-8081-exec-1] .helloString(90): fatal level
+2021-05-04 15:20:20.706 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
+2021-05-04 15:20:20.711 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.
+2021-05-04 15:21:10.032 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarting(55): Starting SpringBootRestApplication using Java 11.0.10 on LAPTOP-JARED with PID 17440 (C:\gradletest\spring-boot-rest\bin\main started by Jared in C:\gradletest\spring-boot-rest)
+2021-05-04 15:21:10.062 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
+2021-05-04 15:21:12.497 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:21:12.497 INFO  [main] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
+2021-05-04 15:21:12.498 INFO  [main] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-04 15:21:12.747 INFO  [main] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
+2021-05-04 15:21:13.155 INFO  [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-04 15:21:13.254 INFO  [main] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-04 15:21:13.574 INFO  [main] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-04 15:21:13.796 INFO  [main] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
+2021-05-04 15:21:14.119 INFO  [main] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
+2021-05-04 15:21:14.154 INFO  [main] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-04 15:21:15.913 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 15:21:17.487 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:21:17.560 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarted(61): Started SpringBootRestApplication in 9.27 seconds (JVM running for 11.651)
+2021-05-04 15:21:22.578 INFO  [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].log(173): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-04 15:21:22.751 INFO  [http-nio-8081-exec-2] .helloString(87): info level
+2021-05-04 15:21:22.754 WARN  [http-nio-8081-exec-2] .helloString(88): warn level
+2021-05-04 15:21:22.756 ERROR [http-nio-8081-exec-2] .helloString(89): error level
+2021-05-04 15:21:22.759 FATAL [http-nio-8081-exec-2] .helloString(90): fatal level
+2021-05-04 15:21:57.276 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
+2021-05-04 15:21:57.281 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.
+2021-05-04 15:22:10.862 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarting(55): Starting SpringBootRestApplication using Java 11.0.10 on LAPTOP-JARED with PID 9388 (C:\gradletest\spring-boot-rest\bin\main started by Jared in C:\gradletest\spring-boot-rest)
+2021-05-04 15:22:10.910 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
+2021-05-04 15:22:13.684 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:22:13.685 INFO  [main] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
+2021-05-04 15:22:13.686 INFO  [main] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-04 15:22:13.931 INFO  [main] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
+2021-05-04 15:22:14.230 INFO  [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-04 15:22:14.358 INFO  [main] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-04 15:22:14.624 INFO  [main] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-04 15:22:14.885 INFO  [main] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
+2021-05-04 15:22:15.221 INFO  [main] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
+2021-05-04 15:22:15.261 INFO  [main] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-04 15:22:16.821 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 15:22:18.420 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:22:18.501 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarted(61): Started SpringBootRestApplication in 9.668 seconds (JVM running for 12.023)
+2021-05-04 15:22:25.918 INFO  [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].log(173): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-04 15:22:26.038 INFO  [http-nio-8081-exec-2] .helloString(87): info level
+2021-05-04 15:22:26.040 WARN  [http-nio-8081-exec-2] .helloString(88): warn level
+2021-05-04 15:22:26.042 ERROR [http-nio-8081-exec-2] .helloString(89): error level
+2021-05-04 15:22:26.045 FATAL [http-nio-8081-exec-2] .helloString(90): fatal level
+2021-05-04 15:22:55.200 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
+2021-05-04 15:22:55.222 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.
+2021-05-04 15:23:05.793 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarting(55): Starting SpringBootRestApplication using Java 11.0.10 on LAPTOP-JARED with PID 8172 (C:\gradletest\spring-boot-rest\bin\main started by Jared in C:\gradletest\spring-boot-rest)
+2021-05-04 15:23:05.822 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
+2021-05-04 15:23:08.207 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:23:08.208 INFO  [main] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
+2021-05-04 15:23:08.210 INFO  [main] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-04 15:23:08.470 INFO  [main] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
+2021-05-04 15:23:08.820 INFO  [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-04 15:23:08.926 INFO  [main] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-04 15:23:09.250 INFO  [main] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-04 15:23:09.449 INFO  [main] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
+2021-05-04 15:23:09.761 INFO  [main] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
+2021-05-04 15:23:09.803 INFO  [main] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-04 15:23:11.416 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 15:23:12.966 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:23:13.027 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarted(61): Started SpringBootRestApplication in 9.209 seconds (JVM running for 11.71)
+2021-05-04 15:23:34.176 INFO  [RMI TCP Connection(8)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
+2021-05-04 15:23:34.188 INFO  [RMI TCP Connection(8)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.
+2021-05-04 15:23:43.906 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarting(55): Starting SpringBootRestApplication using Java 11.0.10 on LAPTOP-JARED with PID 15780 (C:\gradletest\spring-boot-rest\bin\main started by Jared in C:\gradletest\spring-boot-rest)
+2021-05-04 15:23:43.937 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
+2021-05-04 15:23:46.341 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:23:46.343 INFO  [main] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
+2021-05-04 15:23:46.343 INFO  [main] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-04 15:23:46.568 INFO  [main] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
+2021-05-04 15:23:46.878 INFO  [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-04 15:23:47.018 INFO  [main] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-04 15:23:47.328 INFO  [main] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-04 15:23:47.558 INFO  [main] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
+2021-05-04 15:23:47.850 INFO  [main] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
+2021-05-04 15:23:47.880 INFO  [main] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-04 15:23:49.254 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 15:23:50.587 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:23:50.637 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarted(61): Started SpringBootRestApplication in 8.334 seconds (JVM running for 10.626)
+2021-05-04 15:24:05.224 INFO  [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].log(173): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-04 15:24:05.294 INFO  [http-nio-8081-exec-2] .helloString(87): info level
+2021-05-04 15:24:05.295 WARN  [http-nio-8081-exec-2] .helloString(88): warn level
+2021-05-04 15:24:05.297 ERROR [http-nio-8081-exec-2] .helloString(89): error level
+2021-05-04 15:24:05.300 FATAL [http-nio-8081-exec-2] .helloString(90): fatal level
+2021-05-04 15:24:31.680 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
+2021-05-04 15:24:31.684 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.
+2021-05-04 15:24:41.555 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarting(55): Starting SpringBootRestApplication using Java 11.0.10 on LAPTOP-JARED with PID 9608 (C:\gradletest\spring-boot-rest\bin\main started by Jared in C:\gradletest\spring-boot-rest)
+2021-05-04 15:24:41.587 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
+2021-05-04 15:24:44.024 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:24:44.027 INFO  [main] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
+2021-05-04 15:24:44.028 INFO  [main] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-04 15:24:44.298 INFO  [main] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
+2021-05-04 15:24:44.677 INFO  [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-04 15:24:44.794 INFO  [main] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-04 15:24:45.046 INFO  [main] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-04 15:24:45.250 INFO  [main] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
+2021-05-04 15:24:45.544 INFO  [main] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
+2021-05-04 15:24:45.574 INFO  [main] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-04 15:24:46.959 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 15:24:48.578 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:24:48.664 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarted(61): Started SpringBootRestApplication in 9.12 seconds (JVM running for 11.146)
+2021-05-04 15:24:53.253 INFO  [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].log(173): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-04 15:24:53.301 INFO  [http-nio-8081-exec-2] .helloString(87): info level
+2021-05-04 15:24:53.302 WARN  [http-nio-8081-exec-2] .helloString(88): warn level
+2021-05-04 15:24:53.303 ERROR [http-nio-8081-exec-2] .helloString(89): error level
+2021-05-04 15:24:53.318 FATAL [http-nio-8081-exec-2] .helloString(90): fatal level
+2021-05-04 15:25:55.118 INFO  [RMI TCP Connection(7)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
+2021-05-04 15:25:55.132 INFO  [RMI TCP Connection(7)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.
+2021-05-04 15:26:22.450 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarting(55): Starting SpringBootRestApplication using Java 11.0.10 on LAPTOP-JARED with PID 12368 (C:\gradletest\spring-boot-rest\bin\main started by Jared in C:\gradletest\spring-boot-rest)
+2021-05-04 15:26:22.481 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
+2021-05-04 15:26:25.803 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:26:25.808 INFO  [main] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
+2021-05-04 15:26:25.811 INFO  [main] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-04 15:26:26.329 INFO  [main] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
+2021-05-04 15:26:26.946 INFO  [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-04 15:26:27.270 INFO  [main] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-04 15:26:28.035 INFO  [main] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-04 15:26:28.715 INFO  [main] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
+2021-05-04 15:26:29.508 INFO  [main] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
+2021-05-04 15:26:29.605 INFO  [main] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-04 15:26:32.792 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 15:26:36.395 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8081"]
+2021-05-04 15:26:36.511 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarted(61): Started SpringBootRestApplication in 15.624 seconds (JVM running for 18.246)
+2021-05-04 15:26:45.585 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].log(173): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-04 15:26:45.721 INFO  [http-nio-8081-exec-1] .helloString(87): info level
+2021-05-04 15:26:45.724 WARN  [http-nio-8081-exec-1] .helloString(88): warn level
+2021-05-04 15:26:45.727 ERROR [http-nio-8081-exec-1] .helloString(89): error level
+2021-05-04 15:26:45.730 FATAL [http-nio-8081-exec-1] .helloString(90): fatal level
+2021-05-04 15:27:07.128 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
+2021-05-04 15:27:07.131 INFO  [RMI TCP Connection(9)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.
