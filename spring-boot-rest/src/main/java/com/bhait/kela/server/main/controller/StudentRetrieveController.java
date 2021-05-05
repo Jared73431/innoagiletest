@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,11 +25,18 @@ public class StudentRetrieveController {
 
 	@Autowired
 	StudentService studentService;
+	
+	@Autowired
+	private RedisTemplate<String,Object> redisTemplate;
 
 	@ResponseBody
 	@RequestMapping(method = RequestMethod.GET, value = "/student/allstudent")
 	public List<Student> getAllStudents() {
 		List<Student> studentlist = studentService.getAll();
+		//redisTemplate.opsForValue().set("studentlists", studentlist);
+		//redisTemplate.delete("studentlists");
+		//List<Student> studentone =(List<Student>) redisTemplate.opsForValue().get("studentlists");
+		//return studentone.size();
 		return studentlist;
 
 	}

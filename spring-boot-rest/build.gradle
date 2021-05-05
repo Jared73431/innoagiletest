@@ -35,7 +35,10 @@ dependencies {
 	// https://mvnrepository.com/artifact/com.itextpdf/itextpdf
 	implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13'
 
-	 compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2'
+	//redis 相關依賴
+	implementation group: 'redis.clients', name: 'jedis', version: '3.3.0'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.4.5'
 	
 }
 
