@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Log4j2 配置文件 參考 https://www.cnblogs.com/keeya/p/10101547.html  -->
+<!--日誌級別以及優先級排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL -->
+<!-- monitorInterval=“N” 自動間隔 N 秒檢測配置文件是否修改，有修改則自動重新加載配置 可以不設置  -->
+<!-- status="warn" Log4j2 本身日誌輸出級別 可以不設置 -->
+<configuration monitorInterval="30" status="TRACE">
+  <!-- 變量配置 -->
+  <Properties>
+    <!-- 日誌輸出格式 -->
+    <property name="LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight{%-5level} [%t] %highlight{%c{1.}.%M(%L)}: %msg%n"/>
+    <!-- 日誌輸出到文件的路徑和文件名 根據項目情況更改 value 值 -->
+    <property name="LOG_FILE_PATH" value="logger"/>
+    <property name="LOG_FILE_NAME" value="log4j2"/>
+  </Properties>
+  <!-- 定義 appenders -->
+  <appenders>
+    <!-- console 設定 控制檯輸出 -->
+    <console name="Console" target="SYSTEM_OUT">
+      <!-- 指定 輸出格式 默認 %msg%n -->
+      <PatternLayout pattern="${LOG_PATTERN}"/>
+      <!-- onMatch="ACCEPT" 只輸出 level 級別及級別優先級更高的 Log , onMismatch="DENY" 其他拒絕輸出  -->
+      <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+    </console>
+    <!-- 將日誌全部輸出到 test.log,append="true" 表示重新運行時不刪除日誌 -->
+    <File name="FileLog" fileName="${LOG_FILE_PATH}/test.log" append="true">
+      <PatternLayout pattern="${LOG_PATTERN}"/>
+    </File>
+    <!-- RollingFile 滾動輸出日誌到文件 -->
+    <!-- 輸出 warn 及更高優先級的 log 到 LOG_FILE_PATH 目錄下的 warn.log 文件  -->
+    <!-- filePattern 指定 warn.log 文件大於 size 大小時候文件處理規則, %d 日期;%i 編號(最大為下方設置的 max 值) -->
+    <RollingFile name="RollingFileWarn" fileName="${LOG_FILE_PATH}/warn.log"
+                 filePattern="${LOG_FILE_PATH}/%d{yyyy-MM-dd}/WARN_${LOG_FILE_NAME}_%i.log.gz">
+      <PatternLayout pattern="${LOG_PATTERN}" />
+      <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+      <Policies>
+        <!-- interval="N" ，N小時滾動一次，默認是1 hour-->
+        <TimeBasedTriggeringPolicy interval="1"/>
+        <!-- size="5MB" 指定日誌輸出文件大小，若大小超過size，則日誌會自動存入按 filePattern 規則建立的文件夾下面並進行壓縮 -->
+        <SizeBasedTriggeringPolicy size="5MB"/>
+      </Policies>
+      <!-- DefaultRolloverStrategy 不設置的情況下，默認為最多同一文件夾下7個 filePattern 規矩建立的壓縮文件,多於 max 的值將用新的文件覆蓋就的壓縮文件 -->
+      <DefaultRolloverStrategy max="10"/>
+    </RollingFile>
+    <!-- 輸出 error 及更高優先級的 log 到 LOG_FILE_PATH 目錄下的 error.log 文件  -->
+    <RollingFile name="RollingFileError" fileName="${LOG_FILE_PATH}/error.log"
+                 filePattern="${LOG_FILE_PATH}/%d{yyyy-MM-dd}/ERROR_${LOG_FILE_NAME}_%i.log.gz">
+      <PatternLayout pattern="${LOG_PATTERN}" />
+      <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1"/>
+        <SizeBasedTriggeringPolicy size="5MB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="10"/>
+    </RollingFile>
+    <!-- 輸出 info 及更高優先級的 log 到 LOG_FILE_PATH 目錄下的 info.log 文件  -->
+    <RollingFile name="RollingFileInfo" fileName="${LOG_FILE_PATH}/info.log"
+                 filePattern="${LOG_FILE_PATH}/%d{yyyy-MM-dd}/Info_${LOG_FILE_NAME}_%i.log.gz">
+      <PatternLayout pattern="${LOG_PATTERN}"/>
+      <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1"/>
+        <SizeBasedTriggeringPolicy size="5MB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="10"/>
+    </RollingFile>
+  </appenders>
+
+  <!-- 在 Loggers 引入 Appender 使其生效 -->
+  <loggers>
+    <!-- Logger 節點用來單獨指定 package 包下的 class 的日誌輸出格式等信息 -->
+    <logger  name="org.springframework" level="info" additivity="false">
+      <!-- 指定 org.springframework 的 level 及更高優先級的日誌只在控制檯輸出 -->
+      <!-- additivity="false" 只在自定義的Appender中進行輸出 -->
+      <AppenderRef ref="Console"/>
+    </logger >
+
+    <Root level="info">
+      <!-- 用來指定項目的 Root 日誌規則，如果沒有單獨指定Logger，那麼就會默認使用 Root 日誌輸出 -->
+      <!-- AppenderRef 用來指定日誌輸出到哪個 Appender -->
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="FileLog"/>
+      <AppenderRef ref="RollingFileInfo"/>
+      <AppenderRef ref="RollingFileWarn"/>
+      <AppenderRef ref="RollingFileError"/>
+    </Root>
+  </loggers>
+</configuration>

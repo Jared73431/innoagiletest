@@ -19,10 +19,11 @@ configurations {
 repositories {
 	mavenCentral()
 }
-
 configurations.all {
     exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
 }
+
+
 
 dependencies {
 	
@@ -42,8 +43,12 @@ dependencies {
 	implementation group: 'com.lowagie', name: 'itext', version: '2.1.7'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	
-	// log4j2
+	//log4j2依賴
 	implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+	
+	//redis 相關依賴
+	implementation group: 'redis.clients', name: 'jedis', version: '3.3.0'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.4.5'
 }
 
 test {

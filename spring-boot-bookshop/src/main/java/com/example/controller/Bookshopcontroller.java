@@ -2,9 +2,8 @@ package com.example.controller;
 
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -22,19 +21,28 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.example.beans.Book;
 import com.example.service.Bookservice;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Controller
 public class Bookshopcontroller {
 	
-	Logger logger = LogManager.getLogger(LogManager.ROOT_LOGGER_NAME);
 
 	@Autowired
 	Bookservice bookservice;
+	
+	@Autowired
+	private RedisTemplate<String,Object> redisTemplate;
 
 	@ResponseBody
 	@GetMapping("/getbook")
-	public List<Book> getall() {
+	public int getall() {
 		List<Book> booklist = bookservice.getall();
-		return booklist;
+		redisTemplate.opsForValue().set("booklists", booklist);
+		//redisTemplate.delete("booklist");
+		List<Book> booklist2 =(List<Book>) redisTemplate.opsForValue().get("booklists");
+		return booklist2.size();
+		//return booklist;
 	}
 
 	@ResponseBody
@@ -110,10 +118,17 @@ public class Bookshopcontroller {
 		bookservice.deletebook(ISBN);
 		return "redirect:/todos";
 	    }
+	
 	@GetMapping(value = "/sample/testlog")
 	@ResponseBody
-	Object testlog() {
-		logger.info("统计异常池数量异常,异常信息如下:e.getStackTrace().toString()");
-		return "ok";
+	public String helloString() {
+		System.out.println("=> Hello Log4jDemo...");
+        log.trace("trace level");
+        log.debug("debug level");
+        log.info("info level");
+        log.warn("warn level");
+        log.error("error level");
+        log.info("统计异常池数量异常,异常信息如下:e.getStackTrace().toString()");
+		return "Hello Spring Boot";
 	}
 }

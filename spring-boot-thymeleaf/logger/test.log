@@ -1,0 +1,16 @@
+2021-05-06 10:59:19.243 INFO  [Test worker] c.e.SpringBootThymeleafApplicationTests.logStarting(55): Starting SpringBootThymeleafApplicationTests using Java 15.0.1 on LAPTOP-JARED with PID 21860 (started by Jared in C:\gradletest\spring-boot-thymeleaf)
+2021-05-06 10:59:19.263 INFO  [Test worker] c.e.SpringBootThymeleafApplicationTests.logStartupProfileInfo(662): No active profile set, falling back to default profiles: default
+2021-05-06 10:59:22.173 INFO  [Test worker] c.e.SpringBootThymeleafApplicationTests.logStarted(61): Started SpringBootThymeleafApplicationTests in 3.827 seconds (JVM running for 7.308)
+2021-05-06 11:00:09.887 INFO  [restartedMain] c.e.SpringBootThymeleafApplication.logStarting(55): Starting SpringBootThymeleafApplication using Java 11.0.10 on LAPTOP-JARED with PID 23808 (C:\gradletest\spring-boot-thymeleaf\bin\main started by Jared in C:\gradletest\spring-boot-thymeleaf)
+2021-05-06 11:00:09.936 INFO  [restartedMain] c.e.SpringBootThymeleafApplication.logStartupProfileInfo(662): No active profile set, falling back to default profiles: default
+2021-05-06 11:00:12.050 INFO  [restartedMain] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:00:12.052 INFO  [restartedMain] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
+2021-05-06 11:00:12.053 INFO  [restartedMain] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-05-06 11:00:12.192 INFO  [restartedMain] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
+2021-05-06 11:00:13.032 INFO  [restartedMain] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:00:13.098 INFO  [restartedMain] c.e.SpringBootThymeleafApplication.logStarted(61): Started SpringBootThymeleafApplication in 4.674 seconds (JVM running for 6.893)
+2021-05-06 11:00:29.746 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].log(173): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:00:29.809 INFO  [http-nio-8080-exec-1] .helloString(27): info level
+2021-05-06 11:00:29.809 WARN  [http-nio-8080-exec-1] .helloString(28): warn level
+2021-05-06 11:00:29.811 ERROR [http-nio-8080-exec-1] .helloString(29): error level
+2021-05-06 11:00:29.816 INFO  [http-nio-8080-exec-1] .helloString(30): 统计异常池数量异常,异常信息如下:e.getStackTrace().toString()
