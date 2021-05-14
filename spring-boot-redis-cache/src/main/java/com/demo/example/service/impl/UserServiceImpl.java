@@ -55,4 +55,11 @@ public class UserServiceImpl implements UserService {
 	public void clear(Integer pId) {
 
 	}
+
+	@Override
+	public Iterable<APPUser> inseruser(APPUser aPPUser) {
+		userDao.save(aPPUser);
+		
+		return userDao.findAll();
+	}
 }

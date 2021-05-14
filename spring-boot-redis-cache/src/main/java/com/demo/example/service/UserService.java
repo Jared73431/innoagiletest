@@ -5,11 +5,13 @@ import java.util.List;
 import com.demo.example.beans.APPUser;
 
 public interface UserService {
-	List<APPUser> getAllUsers();
+	public List<APPUser> getAllUsers();
 
-	APPUser findById(Integer pId);
+	public APPUser findById(Integer pId);
     
-    void clearAllUserCache();
+	public void clearAllUserCache();
     
-    void clear(Integer pId);
+	public void clear(Integer pId);
+	
+	public Iterable<APPUser> inseruser(APPUser aPPUser);
 }
