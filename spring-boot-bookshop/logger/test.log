@@ -18,3 +18,22 @@
 2021-05-06 11:13:53.673 INFO  [http-nio-8043-exec-2] c.e.c.Bookshopcontroller.helloString(131): 统计异常池数量异常,异常信息如下:e.getStackTrace().toString()
 2021-05-06 11:15:31.523 INFO  [RMI TCP Connection(16)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-2 - Shutdown initiated...
 2021-05-06 11:15:31.530 INFO  [RMI TCP Connection(16)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-2 - Shutdown completed.
+2021-06-14 22:58:02.209 INFO  [restartedMain] c.e.SpringBootBookshopApplication.logStarting(55): Starting SpringBootBookshopApplication using Java 11.0.10 on LAPTOP-JARED with PID 1972 (C:\gradletest\spring-boot-bookshop\bin\main started by Jared in C:\gradletest\spring-boot-bookshop)
+2021-06-14 22:58:02.275 INFO  [restartedMain] c.e.SpringBootBookshopApplication.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
+2021-06-14 22:58:06.030 INFO  [restartedMain] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8043"]
+2021-06-14 22:58:06.033 INFO  [restartedMain] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
+2021-06-14 22:58:06.034 INFO  [restartedMain] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-14 22:58:06.281 INFO  [restartedMain] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
+2021-06-14 22:58:06.720 INFO  [restartedMain] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-14 22:58:06.889 INFO  [restartedMain] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-06-14 22:58:07.355 INFO  [restartedMain] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-14 22:58:07.670 INFO  [restartedMain] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
+2021-06-14 22:58:08.124 INFO  [restartedMain] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
+2021-06-14 22:58:08.175 INFO  [restartedMain] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-06-14 22:58:10.118 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-14 22:58:12.645 INFO  [restartedMain] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8043"]
+2021-06-14 22:58:12.719 INFO  [restartedMain] c.e.SpringBootBookshopApplication.logStarted(61): Started SpringBootBookshopApplication in 12.382 seconds (JVM running for 15.356)
+2021-06-14 22:59:06.966 INFO  [http-nio-8043-exec-1] o.a.c.c.C.[.[.[/].log(173): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-14 22:59:12.775 WARN  [http-nio-8043-exec-1] n.s.j.e.e.PdfGlyphRenderer.determinePatchedItext(64): Unpatched iText found, cannot use glyph rendering
+2021-06-14 23:03:09.937 INFO  [RMI TCP Connection(13)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
+2021-06-14 23:03:09.950 INFO  [RMI TCP Connection(13)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.

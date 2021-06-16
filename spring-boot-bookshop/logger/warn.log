@@ -1,4 +1,1 @@
-2021-05-06 11:11:54.922 WARN  [http-nio-8043-exec-1] c.e.c.Bookshopcontroller.helloString(129): warn level
-2021-05-06 11:11:54.924 ERROR [http-nio-8043-exec-1] c.e.c.Bookshopcontroller.helloString(130): error level
-2021-05-06 11:13:53.671 WARN  [http-nio-8043-exec-2] c.e.c.Bookshopcontroller.helloString(129): warn level
-2021-05-06 11:13:53.672 ERROR [http-nio-8043-exec-2] c.e.c.Bookshopcontroller.helloString(130): error level
+2021-06-14 22:59:12.775 WARN  [http-nio-8043-exec-1] n.s.j.e.e.PdfGlyphRenderer.determinePatchedItext(64): Unpatched iText found, cannot use glyph rendering

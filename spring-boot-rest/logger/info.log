@@ -1,17 +1,12 @@
-2021-05-05 17:48:34.265 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarting(55): Starting SpringBootRestApplication using Java 11.0.10 on LAPTOP-JARED with PID 432 (C:\gradletest\spring-boot-rest\bin\main started by Jared in C:\gradletest\spring-boot-rest)
-2021-05-05 17:48:34.301 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
-2021-05-05 17:48:37.713 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Initializing ProtocolHandler ["http-nio-8081"]
-2021-05-05 17:48:37.728 INFO  [main] o.a.c.c.StandardService.log(173): Starting service [Tomcat]
-2021-05-05 17:48:37.729 INFO  [main] o.a.c.c.StandardEngine.log(173): Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-05-05 17:48:37.963 INFO  [main] o.a.c.c.C.[.[.[/].log(173): Initializing Spring embedded WebApplicationContext
-2021-05-05 17:48:38.333 INFO  [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-05 17:48:38.485 INFO  [main] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-05-05 17:48:39.072 INFO  [main] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-05-05 17:48:39.554 INFO  [main] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
-2021-05-05 17:48:40.144 INFO  [main] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
-2021-05-05 17:48:40.199 INFO  [main] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2021-05-05 17:48:41.792 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-05 17:48:45.364 INFO  [main] o.a.c.h.Http11NioProtocol.log(173): Starting ProtocolHandler ["http-nio-8081"]
-2021-05-05 17:48:45.441 INFO  [main] c.b.k.s.m.SpringBootRestApplication.logStarted(61): Started SpringBootRestApplication in 13.284 seconds (JVM running for 16.024)
-2021-05-05 17:50:09.554 INFO  [RMI TCP Connection(11)-127.0.0.1] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
-2021-05-05 17:50:09.571 INFO  [RMI TCP Connection(11)-127.0.0.1] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.
+2021-06-08 11:19:50.417 INFO  [main] c.b.k.s.m.s.StudentControllerTest.logStarting(55): Starting StudentControllerTest using Java 11.0.10 on LAPTOP-JARED with PID 14020 (started by Jared in C:\gradletest\spring-boot-rest)
+2021-06-08 11:19:50.462 INFO  [main] c.b.k.s.m.s.StudentControllerTest.logStartupProfileInfo(660): No active profile set, falling back to default profiles: default
+2021-06-08 11:19:51.934 INFO  [main] o.h.j.i.u.LogHelper.logPersistenceUnitInformation(31): HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-08 11:19:52.001 INFO  [main] o.h.Version.logVersion(44): HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-06-08 11:19:52.159 INFO  [main] o.h.a.c.Version.<clinit>(56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-08 11:19:52.460 INFO  [main] c.z.h.HikariDataSource.getConnection(110): HikariPool-1 - Starting...
+2021-06-08 11:19:52.644 INFO  [main] c.z.h.HikariDataSource.getConnection(123): HikariPool-1 - Start completed.
+2021-06-08 11:19:52.661 INFO  [main] o.h.d.Dialect.<init>(175): HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-06-08 11:19:53.439 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService(52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-08 11:19:55.164 INFO  [main] c.b.k.s.m.s.StudentControllerTest.logStarted(61): Started StudentControllerTest in 5.374 seconds (JVM running for 7.009)
+2021-06-08 11:19:55.509 INFO  [SpringContextShutdownHook] c.z.h.HikariDataSource.close(350): HikariPool-1 - Shutdown initiated...
+2021-06-08 11:19:55.511 INFO  [SpringContextShutdownHook] c.z.h.HikariDataSource.close(352): HikariPool-1 - Shutdown completed.
