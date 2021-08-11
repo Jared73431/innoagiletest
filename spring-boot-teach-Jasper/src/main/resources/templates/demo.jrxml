@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="demo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ec0b01aa-bfdb-4fbd-a5b5-577ea645bdf8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="phone" class="java.lang.String"/>
+	<parameter name="no" class="java.lang.String"/>
+	<parameter name="datestring" class="java.lang.String"/>
+	<parameter name="personid" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="code" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="10" width="410" height="53" uuid="20e4c0be-3848-4782-af12-b92bc4201d2e"/>
+				<textElement>
+					<font fontName="標楷體" size="26"/>
+				</textElement>
+				<text><![CDATA[轉帳代繳約定書明細]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="10" width="100" height="30" uuid="0729bf0b-5046-4792-a67a-523a0f2c58ed"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[銀行別:004]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="40" width="100" height="30" uuid="196de21c-ec14-469f-9163-2d8d82e587ac">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7ac68883-2b48-4a37-9d7f-44c6ac6a28fb"/>
+				</reportElement>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[序號]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="40" width="100" height="30" uuid="7e825688-9635-4804-af24-f029d0b7756d"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[機構代號]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="40" width="100" height="30" uuid="09d82964-4122-4b05-ab0a-6c7a7976d871"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[電話號碼]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="40" width="100" height="30" uuid="f44dce9b-cb85-4cb0-a0c2-5a9796245a93"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[申請日期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="40" width="100" height="30" uuid="78fcc834-ab01-4c77-a934-20c3f2297d05"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[簽核欄]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="0" width="100" height="30" uuid="44dc25aa-5938-4c50-a4d5-1a9d29a9c3e2"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="100" height="30" uuid="a6c600a7-1d2c-4ee7-b34c-8a40c2583731"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{phone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="130" height="50" uuid="74f3e781-f5dc-458b-ac5c-fe44e54573e7"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datestring}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="0" width="100" height="30" uuid="5261b159-0747-4940-90eb-bdfb9f70a96f"/>
+				<textFieldExpression><![CDATA[$P{personid}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="20" width="100" height="30" uuid="d74b083f-602b-44bb-a90f-2035e92cb23f"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[小計:]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="20" width="100" height="30" uuid="838c002b-6c72-48c3-b9bb-cb184f564658"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[簽收人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="20" width="100" height="30" uuid="14f7eea7-5b7f-45b6-9a94-2ce7c15138bf"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[連絡電話]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="20" width="100" height="30" uuid="c77716e7-1fcb-409a-827f-67460d5e201d"/>
+				<textElement>
+					<font fontName="標楷體" size="20"/>
+				</textElement>
+				<text><![CDATA[傳真機]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
