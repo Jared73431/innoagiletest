@@ -16,7 +16,7 @@
 	<title>
 		<band height="79" splitType="Stretch">
 			<staticText>
-				<reportElement x="100" y="10" width="410" height="53" uuid="20e4c0be-3848-4782-af12-b92bc4201d2e"/>
+				<reportElement x="110" y="10" width="410" height="53" uuid="20e4c0be-3848-4782-af12-b92bc4201d2e"/>
 				<textElement>
 					<font fontName="標楷體" size="26"/>
 				</textElement>
@@ -99,7 +99,7 @@
 				<textFieldExpression><![CDATA[$P{datestring}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="10" y="0" width="100" height="30" uuid="5261b159-0747-4940-90eb-bdfb9f70a96f"/>
+				<reportElement x="20" y="0" width="100" height="30" uuid="5261b159-0747-4940-90eb-bdfb9f70a96f"/>
 				<textFieldExpression><![CDATA[$P{personid}]]></textFieldExpression>
 			</textField>
 		</band>
