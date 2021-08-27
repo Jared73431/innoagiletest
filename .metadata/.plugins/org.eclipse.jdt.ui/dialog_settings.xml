@@ -19,6 +19,8 @@
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="completion_proposal_size">
+		<item key="size.x" value="866"/>
+		<item key="size.y" value="348"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item key="create_package_info_java" value="false"/>

@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="_"/>
 		<list key="findhistory">
+			<item value="txt"/>
 			<item value="-"/>
 		</list>
 		<list key="replacehistory">
