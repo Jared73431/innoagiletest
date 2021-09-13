@@ -3,5 +3,6 @@
 	<persistence-unit name="spring-boot-bookshop">
 		<class>com.example.beans.User</class>
 		<class>com.example.beans.Book</class>
+		<class>com.example.beans.table2</class>
 	</persistence-unit>
 </persistence>

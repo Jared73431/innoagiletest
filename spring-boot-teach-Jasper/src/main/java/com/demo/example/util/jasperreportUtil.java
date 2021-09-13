@@ -34,7 +34,7 @@ public class jasperreportUtil {
 	/*
 	 * 把 .jrxml 編譯成 .jasper，並讀取檔案
 	 */
-	private JasperReport getJasperReportFormJrxml(String template) throws JRException {
+	public JasperReport getJasperReportFormJrxml(String template) throws JRException {
 		InputStream input = null;
 		try {
 
